@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
 public class Main {
@@ -8,15 +6,15 @@ public class Main {
         List<String> fruits = new ArrayList<>();
 
         fruits.add("Mango");
+        fruits.add("Bbanana");
         fruits.add("Apple");
+        fruits.add("Tomato");
         fruits.add("Cherry");
         fruits.add("Banana");
+        fruits.add("Potato");
         fruits.add("Dragonfruit");
 
-        Collections.sort(fruits);
-
-        for(String fruit: fruits) {
-            System.out.println(fruit);
-        }
+        fruits.set(1, "Orange");
+        System.out.println(fruits.get(1));
     }
 }
